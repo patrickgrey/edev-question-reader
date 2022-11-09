@@ -1,0 +1,85 @@
+---
+title: Title
+jsFiles: ["./main.js"]
+cssFiles: ["./styles.css"]
+useDefaultHeader: true
+hideBanner: false
+breadcrumb: []
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    {% set css %}
+    {% include "../../_shared/css/guide.css" %}
+    {% include "../../_shared/css/shared.css" %}
+    {% endset %}
+
+    {% if devEnvironment.environment === 'dev' %}
+      <link rel="stylesheet" href="/_shared/css/guide.css">
+      <link rel="stylesheet" href="/_shared/css/shared.css">
+    {% else %}
+      <style>
+        {{css | cssmin | safe}}
+      </style>
+    {% endif %}
+
+    {% for file in cssFiles %}
+      <link rel="stylesheet" href="{{file | sasstocss}}">
+    {% endfor %}
+  </head>
+  <body>
+    {% if hideBanner === false %}
+      {% lmsBanner %}
+    {% endif %}
+
+    {% if useDefaultHeader %}
+      <header class="ians-column-wide-1 mt-1">
+        {% if breadcrumb != '' %}
+          <p class="ians-breadcrumb">
+            {% for crumb in breadcrumb %}
+              {{ crumb }} / 
+            {% endfor %}
+          </p>
+        {% endif %}
+        {% if breadcrumb != '' %}
+          <h1>{{ title }}</h1>
+        {% else %}
+          <h1 class="mt-3">{{ title }}</h1>
+        {% endif %}
+      </header>
+      <main>
+        {{ content | safe }}
+      </main>
+    {% else %}
+      {{ content | safe }}
+    {% endif %}
+
+    <footer>&copy; EUROCONTROL</footer>
+
+    {% set js %}
+    {% include "../../_shared/js/scrollToTop.js" %}
+    {% include "../../_shared/js/shared.js" %}
+    {% endset %}
+
+    {% if devEnvironment.environment === 'dev' %}
+      <script defer src="/_shared/js/scrollToTop.js"></script>
+      <script defer src="/_shared/js/shared.js"></script>
+    {% else %}
+      <script>
+        {{js | jsmin | safe}}
+      </script>
+    {% endif %}
+
+    {% for file in jsFilesExternal | reverse %}
+      <script defer src="{{file}}"></script>
+    {% endfor %}
+
+    {% for file in jsFiles %}
+      <script type="module" defer src="{{file}}"></script>
+    {% endfor %}
+
+  </body>
+</html>

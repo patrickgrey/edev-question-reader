@@ -1,0 +1,53 @@
+{
+  "name": "dev-template-vite",
+  "version": "6.0.0",
+  "description": "A starter repository for a blog web site using the Eleventy static site generator.",
+  "scripts": {
+    "del": "del-cli website-publish",
+    "serve": "cross-env DEV_ENVIRONMENT=dev npx @11ty/eleventy --serve --incremental",
+    "dev": "run-s del serve",
+    "build:11ty": "cross-env DEV_ENVIRONMENT=prod npx @11ty/eleventy",
+    "build:esbuild": "node _utilities/build.mjs",
+    "build:zip": "node _utilities/zip-it-and-ship-it.mjs",
+    "build:http-server": "http-server website-publish -c-1",
+    "build": "run-s del build:11ty build:esbuild build:zip",
+    "bench": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy",
+    "watch": "npx @11ty/eleventy --watch",
+    "debug": "DEBUG=* npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/11ty/eleventy-base-blog.git"
+  },
+  "author": {
+    "name": "Zach Leatherman",
+    "email": "zachleatherman@gmail.com",
+    "url": "https://zachleat.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/11ty/eleventy-base-blog/issues"
+  },
+  "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.0-canary.16",
+    "@11ty/eleventy-img": "^2.0.1",
+    "@11ty/eleventy-plugin-vite": "^2.0.0-canary.2",
+    "archiver": "^5.3.1",
+    "clean-css": "^5.3.1",
+    "cross-env": "^7.0.3",
+    "del-cli": "^5.0.0",
+    "directory-tree": "^3.3.1",
+    "eleventy-plugin-purgecss": "^0.3.0",
+    "esbuild": "^0.15.8",
+    "esbuild-sass-plugin": "^2.3.2",
+    "fast-glob": "^3.2.12",
+    "gsap": "^3.11.2",
+    "http-server": "^14.1.1",
+    "normalize.css": "^8.0.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.54.9",
+    "terser": "^5.15.1",
+    "xml2js": "^0.4.23"
+  }
+}

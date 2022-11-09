@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+title: Contents
+jsFiles:
+useDefaultHeader: false
+hideBanner: true
+---
+<header class="ians-column-wide-1 mt-3">
+  <h1>{{title}}</h1>
+</header>
+
+<main>
+  <div class="ians-column">
+
+    {{ courseContent.tree | safe }}
+
+    <p class="ians-contents-level-root">
+      <a href="_direct-access/{{ metadata.courseCode }}_DA.html"
+						>Direct Access</a
+					>
+    </p>
+
+  </div>
+</main>

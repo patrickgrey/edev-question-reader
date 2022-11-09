@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><assessmentTest xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" identifier="5496414" title="ACAS / TCAS Self-test" toolName="imc learning suite" toolVersion="14.12.3.6" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2p2.xsd">
+
+  <outcomeDeclaration baseType="float" cardinality="single" identifier="SCORE">
+    <defaultValue>
+      <value>0.0</value>
+    </defaultValue>
+  </outcomeDeclaration>
+  <outcomeDeclaration baseType="float" cardinality="single" identifier="MAXSCORE">
+    <defaultValue>
+      <value>7.0</value>
+    </defaultValue>
+  </outcomeDeclaration>
+
+  <testPart identifier="Testpart_5496414" navigationMode="nonlinear" submissionMode="simultaneous">
+
+  <assessmentSection fixed="true" identifier="Section_8528029" title="Main folder" visible="true">
+<assessmentItemRef fixed="false" href="question_5509626.xml" identifier="5509626"/>
+<assessmentItemRef fixed="false" href="question_5509642.xml" identifier="5509642"/>
+<assessmentItemRef fixed="false" href="question_5509647.xml" identifier="5509647"/>
+<assessmentItemRef fixed="false" href="question_5509719.xml" identifier="5509719"/>
+<assessmentItemRef fixed="false" href="question_5509727.xml" identifier="5509727"/>
+</assessmentSection>
+</testPart>
+
+  <outcomeProcessing>
+    <setOutcomeValue identifier="SCORE">
+      <sum>
+        <testVariables variableIdentifier="SCORE"/>
+      </sum>
+    </setOutcomeValue>
+  </outcomeProcessing>
+
+</assessmentTest>

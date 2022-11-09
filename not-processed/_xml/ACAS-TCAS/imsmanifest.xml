@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest xmlns="http://www.imsglobal.org/xsd/imscp_v1p1" xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM" xmlns:imsqti="http://www.imsglobal.org/xsd/imsqti_metadata_v2p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" identifier="MANIFEST-85D76736-6D19-9DC0-7C0B-57C31A9FD391" xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 http://www.imsglobal.org/xsd/qti/qtiv2p2/qtiv2p2_imscpv1p2_v1p0.xsd                         http://ltsc.ieee.org/xsd/LOM http://www.imsglobal.org/xsd/imsmd_loose_v1p3p2.xsd                         http://www.imsglobal.org/xsd/imsqti_metadata_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_metadata_v2p2.xsd">
+  <metadata>
+    <schema>QTIv2.2 Package</schema>
+    <schemaversion>1.0.0</schemaversion>
+    <imsmd:lom>
+      <imsmd:identifier>
+        <imsmd:entry>PACKAGE_5496414</imsmd:entry>
+      </imsmd:identifier>
+      <imsmd:title>
+        <imsmd:string language="en-GB">Package including the test ACAS / TCAS Self-test</imsmd:string>
+      </imsmd:title>
+      <imsmd:metaMetadata>
+        <imsmd:metadataschema>LOMv1.0</imsmd:metadataschema>
+        <imsmd:metadataschema>QTIv2.2</imsmd:metadataschema>
+        <imsmd:language>en-GB</imsmd:language>
+      </imsmd:metaMetadata>
+    </imsmd:lom>
+  </metadata>
+  <organizations/>
+  <resources>
+  <resource href="test_5496414.xml" identifier="5496414" type="imsqti_test_xmlv2p2">
+    <metadata>
+      <imsmd:lom>
+        <imsmd:general>
+          <imsmd:identifier>
+            <imsmd:entry>5496414</imsmd:entry>
+          </imsmd:identifier>
+          <imsmd:title>
+            <imsmd:string language="en-GB">ACAS / TCAS Self-test</imsmd:string>
+          </imsmd:title>
+          <imsmd:language>en-GB</imsmd:language>
+          <imsmd:description>
+            <imsmd:string language="en-GB">Test yourself on ACAS/TCAS concepts.</imsmd:string>
+          </imsmd:description>
+          <imsmd:keyword>
+            <imsmd:langstring xml:lang="en-GB">ATC-UNINC </imsmd:langstring>
+          </imsmd:keyword>
+        </imsmd:general>
+        <imsmd:lifeCycle>
+          <imsmd:version>
+            <imsmd:string language="en-GB">9.0</imsmd:string>
+          </imsmd:version>
+          <imsmd:status>
+            <imsmd:source>LOMv1.0</imsmd:source>
+            <imsmd:value>Final</imsmd:value>
+          </imsmd:status>
+        </imsmd:lifeCycle>
+        <imsmd:technical>
+          <imsmd:format>text/x-imsqti-test-xml</imsmd:format>
+        </imsmd:technical>
+      </imsmd:lom>
+    </metadata>
+    <file href="test_5496414.xml"/>
+  </resource>
+<resource href="question_5509626.xml" identifier="5509626" type="imsqti_item_xmlv2p2">
+  <metadata>
+    <imsqti:qtiMetadata>
+      <imsqti:solutionAvailable>true</imsqti:solutionAvailable>
+    </imsqti:qtiMetadata>
+
+    <imsmd:lom>
+      <imsmd:general>
+        <imsmd:identifier>
+          <imsmd:entry>5509626</imsmd:entry>
+        </imsmd:identifier>
+        <imsmd:title>
+          <imsmd:string language="en-GB">Q1</imsmd:string>
+        </imsmd:title>
+        <imsmd:language>en-GB</imsmd:language>
+        <imsmd:keyword>
+          <imsmd:langstring xml:lang="en-GB">ATC-UNINC </imsmd:langstring>
+        </imsmd:keyword>
+      </imsmd:general>
+      <imsmd:lifeCycle>
+        <imsmd:version>
+          <imsmd:string language="en-GB">1.0</imsmd:string>
+        </imsmd:version>
+        <imsmd:status>
+          <imsmd:source>LOMv1.0</imsmd:source>
+        </imsmd:status>
+      </imsmd:lifeCycle>
+      <imsmd:technical>
+        <imsmd:format>text/x-imsqti-item-xml</imsmd:format>
+      </imsmd:technical>
+    </imsmd:lom>
+  </metadata>
+  <file href="question_5509626.xml"/>
+</resource>
+<resource href="question_5509642.xml" identifier="5509642" type="imsqti_item_xmlv2p2">
+  <metadata>
+    <imsqti:qtiMetadata>
+      <imsqti:solutionAvailable>true</imsqti:solutionAvailable>
+    </imsqti:qtiMetadata>
+
+    <imsmd:lom>
+      <imsmd:general>
+        <imsmd:identifier>
+          <imsmd:entry>5509642</imsmd:entry>
+        </imsmd:identifier>
+        <imsmd:title>
+          <imsmd:string language="en-GB">Q2</imsmd:string>
+        </imsmd:title>
+        <imsmd:language>en-GB</imsmd:language>
+        <imsmd:keyword>
+          <imsmd:langstring xml:lang="en-GB">ATC-UNINC </imsmd:langstring>
+        </imsmd:keyword>
+      </imsmd:general>
+      <imsmd:lifeCycle>
+        <imsmd:version>
+          <imsmd:string language="en-GB">1.0</imsmd:string>
+        </imsmd:version>
+        <imsmd:status>
+          <imsmd:source>LOMv1.0</imsmd:source>
+        </imsmd:status>
+      </imsmd:lifeCycle>
+      <imsmd:technical>
+        <imsmd:format>text/x-imsqti-item-xml</imsmd:format>
+      </imsmd:technical>
+    </imsmd:lom>
+  </metadata>
+  <file href="question_5509642.xml"/>
+</resource>
+<resource href="question_5509647.xml" identifier="5509647" type="imsqti_item_xmlv2p2">
+  <metadata>
+    <imsqti:qtiMetadata>
+      <imsqti:solutionAvailable>true</imsqti:solutionAvailable>
+    </imsqti:qtiMetadata>
+
+    <imsmd:lom>
+      <imsmd:general>
+        <imsmd:identifier>
+          <imsmd:entry>5509647</imsmd:entry>
+        </imsmd:identifier>
+        <imsmd:title>
+          <imsmd:string language="en-GB">Q3</imsmd:string>
+        </imsmd:title>
+        <imsmd:language>en-GB</imsmd:language>
+        <imsmd:keyword>
+          <imsmd:langstring xml:lang="en-GB">ATC-UNINC </imsmd:langstring>
+        </imsmd:keyword>
+      </imsmd:general>
+      <imsmd:lifeCycle>
+        <imsmd:version>
+          <imsmd:string language="en-GB">2.0</imsmd:string>
+        </imsmd:version>
+        <imsmd:status>
+          <imsmd:source>LOMv1.0</imsmd:source>
+        </imsmd:status>
+      </imsmd:lifeCycle>
+      <imsmd:technical>
+        <imsmd:format>text/x-imsqti-item-xml</imsmd:format>
+      </imsmd:technical>
+    </imsmd:lom>
+  </metadata>
+  <file href="question_5509647.xml"/>
+</resource>
+<resource href="question_5509719.xml" identifier="5509719" type="imsqti_item_xmlv2p2">
+  <metadata>
+    <imsqti:qtiMetadata>
+      <imsqti:solutionAvailable>true</imsqti:solutionAvailable>
+    </imsqti:qtiMetadata>
+
+    <imsmd:lom>
+      <imsmd:general>
+        <imsmd:identifier>
+          <imsmd:entry>5509719</imsmd:entry>
+        </imsmd:identifier>
+        <imsmd:title>
+          <imsmd:string language="en-GB">Q5</imsmd:string>
+        </imsmd:title>
+        <imsmd:language>en-GB</imsmd:language>
+        <imsmd:keyword>
+          <imsmd:langstring xml:lang="en-GB">ATC-UNINC </imsmd:langstring>
+        </imsmd:keyword>
+      </imsmd:general>
+      <imsmd:lifeCycle>
+        <imsmd:version>
+          <imsmd:string language="en-GB">1.0</imsmd:string>
+        </imsmd:version>
+        <imsmd:status>
+          <imsmd:source>LOMv1.0</imsmd:source>
+        </imsmd:status>
+      </imsmd:lifeCycle>
+      <imsmd:technical>
+        <imsmd:format>text/x-imsqti-item-xml</imsmd:format>
+      </imsmd:technical>
+    </imsmd:lom>
+  </metadata>
+  <file href="question_5509719.xml"/>
+</resource>
+<resource href="question_5509727.xml" identifier="5509727" type="imsqti_item_xmlv2p2">
+  <metadata>
+    <imsqti:qtiMetadata>
+      <imsqti:solutionAvailable>true</imsqti:solutionAvailable>
+    </imsqti:qtiMetadata>
+
+    <imsmd:lom>
+      <imsmd:general>
+        <imsmd:identifier>
+          <imsmd:entry>5509727</imsmd:entry>
+        </imsmd:identifier>
+        <imsmd:title>
+          <imsmd:string language="en-GB">Q6</imsmd:string>
+        </imsmd:title>
+        <imsmd:language>en-GB</imsmd:language>
+        <imsmd:keyword>
+          <imsmd:langstring xml:lang="en-GB">ATC-UNINC </imsmd:langstring>
+        </imsmd:keyword>
+      </imsmd:general>
+      <imsmd:lifeCycle>
+        <imsmd:version>
+          <imsmd:string language="en-GB">1.0</imsmd:string>
+        </imsmd:version>
+        <imsmd:status>
+          <imsmd:source>LOMv1.0</imsmd:source>
+        </imsmd:status>
+      </imsmd:lifeCycle>
+      <imsmd:technical>
+        <imsmd:format>text/x-imsqti-item-xml</imsmd:format>
+      </imsmd:technical>
+    </imsmd:lom>
+  </metadata>
+  <file href="question_5509727.xml"/>
+</resource>
+</resources>
+</manifest>

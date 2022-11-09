@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" identifier="5509719" timeDependent="false" title="Q5" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2p2.xsd">
+
+  <responseDeclaration baseType="identifier" cardinality="single" identifier="RESPONSE">
+    <correctResponse>
+
+    <value>5509725</value>
+</correctResponse>
+  </responseDeclaration>
+
+  <outcomeDeclaration baseType="float" cardinality="single" identifier="SCORE">
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
+  </outcomeDeclaration>
+
+  <outcomeDeclaration baseType="float" cardinality="single" identifier="MAXSCORE">
+    <defaultValue>
+      <value>1.0</value>
+    </defaultValue>
+  </outcomeDeclaration>
+
+  <outcomeDeclaration baseType="identifier" cardinality="single" identifier="FEEDBACKBASIC">
+    <defaultValue>
+      <value>empty</value>
+    </defaultValue>
+  </outcomeDeclaration>
+
+  <itemBody>
+    <div>Q5</div>
+
+    <choiceInteraction maxChoices="1" responseIdentifier="RESPONSE" shuffle="false">
+
+      <prompt>Please select the right answer.</prompt>
+
+    <simpleChoice identifier="5509725">True</simpleChoice>
+<simpleChoice identifier="5509726">False</simpleChoice>
+</choiceInteraction>
+  </itemBody>
+
+  <responseProcessing>
+    <responseCondition>
+      <responseIf>
+        <isNull>
+          <variable identifier="RESPONSE"/>
+        </isNull>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">empty</baseValue>
+        </setOutcomeValue>
+      </responseIf>
+      <responseElseIf>
+        <match>
+          <variable identifier="RESPONSE"/>
+          <correct identifier="RESPONSE"/>
+        </match>
+        <setOutcomeValue identifier="SCORE">
+          <baseValue baseType="float">1.0</baseValue>
+        </setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">Correctly answered.</baseValue>
+        </setOutcomeValue>
+      </responseElseIf>
+      <responseElse>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">Incorrectly answered.</baseValue>
+        </setOutcomeValue>
+      </responseElse>
+    </responseCondition>
+  </responseProcessing>
+
+</assessmentItem>
